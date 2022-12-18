@@ -6,6 +6,8 @@
     --light-background-color: #f4f4fd;
     --accent-color: #e7e9fc;
     --secondary-text-color: #ffffff;
+    --client-icon-color: #8e8f99;
+    --green-color: #31d0aa;
 
     --primary-margin-btwn-items: 24px;
 }
@@ -169,7 +171,13 @@ body {
 
 .hero {
     padding: 192px 0;
-
+    max-width: 1440px;
+    height: 600px;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     background-color:var(--headings-color);
     text-align: center;
 }
@@ -270,6 +278,18 @@ body {
     margin-left: var(--primary-margin-btwn-items);
 }
 
+.features-icon-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
+    margin-bottom: 8px;
+
+    background: #f4f4fd;
+    border-radius: 4px;
+    border-style: none;
+}
+
 /* ___________WHAT ARE WE DOING________ */
 
 .services .item {
@@ -327,6 +347,63 @@ body {
     background-color: var(--primary-background-color);
 }
 
+.team-social-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 12px;
+}
+
+.team-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-brand-color);
+}
+
+.team-social-icon {
+    fill: #f4f4fd;
+}
+
+/* ___________Customers styles__________ */
+
+.customers-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.customers-list-item {
+    width: 168px;
+    height: 88px;
+}
+
+.customers-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    color: var(--client-icon-color);
+    border: 1px solid var(--client-icon-color);
+    border-radius: 4px;
+}
+
+.customers-icon {
+    fill: currentColor;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+    color: var(--primary-brand-color);
+    border-color: var(--primary-brand-color);
+}
+
 /* ___________FOOTER__________ */
 
 .footer {
@@ -367,9 +444,45 @@ body {
     color: var(--accent-color);
 }
 
-.footer-message {
+/* ________Social media_______ */
+
+.footer-social {
+    
+}
+
+.social-title {
+    margin-bottom: 12px;
+
+    font-weight: 500;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-icon {
+    fill: var(--light-background-color);
+}
+
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--green-color);
 }
 
 /* ---------------------------------------------- */
@@ -458,7 +571,19 @@ body {
 }
 
 .portfolio-link {
+    color: var(--main-text-color);
+    display: block;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+
     text-decoration: none;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+    box-shadow: 
+       0px 1px 6px rgba(46, 47, 66, 0.08), 
+       0px 1px 1px rgba(46, 47, 66, 0.16),
+       0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-list-title {
